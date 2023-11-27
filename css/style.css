@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ********************* Main CSS ********************* */
+:root{
+    --body-bg: #ffffff;
+    --pink-color:#ED017F;
+    --text-color: #999999;
+    --text-header-color: #343434;
+    --box-color: rgba(252, 224, 239, 0.2);
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background: var(--body-bg);
+}
+
+.first-para{
+    background-color:var(--other-bg);
+    color:var(--white-color-text);
+    padding: 12px 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+/* **********************GLOBAL STYLING ******************* */
