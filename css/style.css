@@ -56,6 +56,8 @@ select {
     --text-color: #999999;
     --text-header-color: #343434;
     --box-color: rgba(252, 224, 239, 0.2);
+    --white-color: #ffffff;
+    --font: 'Rubik', sans-serif;
 }
 
 /* Set core body defaults */
@@ -63,16 +65,51 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     background: var(--body-bg);
+    font-family: var(--font);
 }
 
-.first-para{
-    background-color:var(--other-bg);
-    color:var(--white-color-text);
-    padding: 12px 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+.container{
+  max-width: 1440px;
+  padding: 0 135px;
+  margin: 0 auto;
 }
 
-/* **********************GLOBAL STYLING ******************* */
+a{
+  text-decoration: none;
+}
+/* ********************** Main STYLING ******************* */
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  }
+
+.navigation .logo a img{
+  max-width: 109px;
+}
+.navigation .nav-lists-container{
+  display: flex;
+  gap: 11rem;
+}
+
+.navigation .nav-list{
+  display:flex;
+  gap: 20px;
+}
+
+.navigation .nav-list li{
+  list-style: none;
+}
+
+.navigation .nav-list li a{
+  color: var(--text-header-color) ;
+}
+
+.nav-button{
+  color: var(--white-color);
+  padding: 8px 20px;
+  background:var(--pink-color);
+  border-radius: 4px;
+}
+
